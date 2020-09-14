@@ -1,0 +1,40 @@
+{
+	"author": "padreramnt",
+	"description": "React fetch hook",
+	"dependencies": {
+		"@st-lib/use-async-memo": "^1.0.0",
+		"tslib": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^16.9.49",
+		"rimraf": "^3.0.2",
+		"typescript": "^3.9.6"
+	},
+	"files": [
+		"lib"
+	],
+	"keywords": [
+		"st-lib",
+		"use-fetch"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Padreramnt/st-lib--use-fetch"
+	},
+	"license": "MIT",
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"name": "@st-lib/use-fetch",
+	"scripts": {
+		"build": "tsc -p ./tsconfig.json",
+		"prebuild": "rimraf -rf ./lib",
+		"prepublishOnly": "npm run build",
+		"prestart": "rimraf -rf ./lib",
+		"start": "tsc -p ./tsconfig.json -w",
+		"start:tsc": "tsc",
+		"test": "tsc -p ./tsconfig.json --noEmit"
+	},
+	"types": "lib/index.d.ts",
+	"version": "1.0.0",
+	"peerDependencies": {}
+}

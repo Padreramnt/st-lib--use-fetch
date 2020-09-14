@@ -1,0 +1,11 @@
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.useTabStops": false,
+		"editor.insertSpaces": false,
+		"[markdown]": {
+		
+			"editor.wordWrap": "on",
+			"editor.quickSuggestions": false
+		}
+}
